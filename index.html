@@ -23,16 +23,41 @@ body {font-size:16px;}
 .coffman-text-red{
     color:#8B0000;
 }
+
+.rwd-sidebar-menu{
+    border:solid black 1px;
+    display:flex;
+
+     
+}
+.rwd-title{
+    border:solid 1px green;
+    width:70%;
+    display:inline-block;
+    
+}
+.rwd-logo{
+    height:90px;
+     
+    background-image:url(http://coffmanschimneysweeps.com/images/logo.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    border:solid 1px blue;
+     width:25%;
+     display:inline-block;
+     
+}
+ 
 </style>
 <body>
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar coffman-red-bg w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
+  <div class="w3-container sidebar-header">
     <h3 class="w3-padding-64"><b>Coffman's<br>Chimney Sweeps</b></h3>
   </div>
-  <div class="w3-bar-block">
+  <div class="w3-bar-block sidebar-anchors">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chimney Cleaning</a> 
     <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hole in Your Roof?</a> 
@@ -42,9 +67,14 @@ body {font-size:16px;}
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large coffman-red-bg w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button coffman-red-bg w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Coffman's</br>Chimney Sweeps</span>
+<header class="w3-container w3-top w3-hide-large coffman-red-bg w3-xlarge w3-padding rwd-sidebar-menu">
+  <div class="rwd-title">
+        <a href="javascript:void(0)" class="w3-button coffman-red-bg xw3-margin-right" onclick="w3_open()">☰</a>
+        <span>Coffman's</br>Chimney Sweeps</span>
+  </div>
+  <div class="rwd-logo"></div>
+    
+ 
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -58,8 +88,8 @@ https://www.w3schools.comhttps://www.w3schools.com/w3images/kitchenconcrete.jpg
 -->
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Coffman's Chimney Sweeps</b></h1>
-    <h1 class="w3-xxxlarge coffman-text-red"><b>Chimney Cleaning.</b></h1>
+    <h1 class="w3-jumbo "><b>Coffman's</b></h1> <h2>Chimney Sweeps</h2>
+    <h3 class="w3-xxxlarge coffman-text-red"><b>Chimney Cleaning.</b></h3>
     <hr style="width:50px;border:5px solid #8B0000" class="w3-round">
   </div>
   
