@@ -1,0 +1,72 @@
+/*
+.coffman-red{
+    #8B0000
+    coffman-red-bg to coffman-red-bg
+    coffman-text-red to coffman-text-red
+*/
+.coffman-red-bg{
+    background:#8B0000;
+    background-color:#8B0000;
+}
+.coffman-text-red{
+    color:#8B0000;
+}
+nav,.rwd-sidebar-menu{
+    color:#fff;
+    text-shadow:1px 1px #222;
+}
+.rwd-sidebar-menu{
+    xborder:solid black 1px;
+    display:flex;
+    text-align:center;
+
+     
+}
+.rwd-hamburger{
+    xborder:solid 1px white;
+    width:20%;
+    display:inline-block;
+    color:rgb(255,255,255,.5);
+}
+.rwd-title{
+    text-align:center;
+    xborder:solid 1px green;
+    width:50%;
+    display:inline-block;
+    
+    font-family:garamond;
+    
+}
+.rwd-logo{
+    height:90px;
+     
+    background-image:url(http://coffmanschimneysweeps.com/images/logo.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    xborder:solid 1px blue;
+     width:25%;
+     display:inline-block;
+     
+}
+.desk-logo{
+    height:150px;
+     
+    background-image:url(http://coffmanschimneysweeps.com/images/logo.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    xborder:solid 1px blue;
+     width:90%;
+     display:inline-block;
+     
+}
+ nav,header{
+     box-shadow:2px 2px 20px #000 ;
+ }
+ 
+ a:hover{
+     background-color:none !important;
+     background:none !important;
+ }
+ a{
+     text-decoration:none;
+ }

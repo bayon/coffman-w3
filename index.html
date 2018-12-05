@@ -5,63 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="./rwd.css">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;background-color:#F1EDC2;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-/*
-.coffman-red{
-    #8B0000
-    coffman-red-bg to coffman-red-bg
-    coffman-text-red to coffman-text-red
-*/
-.coffman-red-bg{
-    background:#8B0000;
-    background-color:#8B0000;
-}
-.coffman-text-red{
-    color:#8B0000;
-}
-nav,.rwd-sidebar-menu{
-    color:#fff;
-}
-.rwd-sidebar-menu{
-    xborder:solid black 1px;
-    display:flex;
-    text-align:center;
-
-     
-}
-.rwd-hamburger{
-    xborder:solid 1px white;
-    width:20%;
-    display:inline-block;
-    color:rgb(255,255,255,.5);
-}
-.rwd-title{
-    text-align:center;
-    xborder:solid 1px green;
-    width:50%;
-    display:inline-block;
-    
-    font-family:garamond;
-    
-}
-.rwd-logo{
+.w3-half img:hover{opacity:.5}
+/*desktop*/
+.logo-certified{
     height:90px;
-     
-    background-image:url(http://coffmanschimneysweeps.com/images/logo.png);
+     text-align:right;
+    background-image:url(http://coffmanschimneysweeps.com/images/csia_logo.png);
     background-size:contain;
     background-repeat:no-repeat;
     xborder:solid 1px blue;
-     width:25%;
+     width:90px;
      display:inline-block;
+      float:right;
+     
      
 }
- header{
-     box-shadow:2px 2px 20px #000;
- }
+.garamond{font-family:garamond;}
+.phone{
+    text-align:right;
+    font-size:2rem;
+}
+a{
+    cursor:pointer;
+}
 </style>
 <body>
 
@@ -69,14 +40,15 @@ nav,.rwd-sidebar-menu{
 <nav class="w3-sidebar coffman-red-bg w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container sidebar-header">
-    <h3 class="w3-padding-64"><b>Coffman's<br>Chimney Sweeps</b></h3>
+        <div class="desk-logo"></div>
+    <h3 class="w3-padding-64"><b><span class="garamond" >Coffman's</span><br>Chimney Sweeps</b></h3>
   </div>
   <div class="w3-bar-block sidebar-anchors">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chimney Cleaning</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hole in Your Roof?</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home Improvement</a> 
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Accessories</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button x-w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button x-w3-hover-white">Chimney Cleaning</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button x-w3-hover-white">Hole in Your Roof?</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button x-w3-hover-white">Home Improvement</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button x-w3-hover-white">Accessories</a> 
   </div>
 </nav>
 
@@ -87,7 +59,7 @@ nav,.rwd-sidebar-menu{
 
   </div>
   <div class="rwd-title">
-        <span style="font-size:2rem;" >Coffman's</span>
+        <span style="font-size:2rem;" class="garamond">Coffman's</span>
         <span style="font-family:helvetica;font-size:1.3rem;" >Chimney Sweeps</span>
   </div>
   <div class="rwd-logo"></div>
@@ -106,7 +78,8 @@ https://www.w3schools.comhttps://www.w3schools.com/w3images/kitchenconcrete.jpg
 -->
   <!-- Header -->
   <div class="w3-container" style="margin-top:90px" id="showcase">
-    <h1 class="w3-jumbo "><b>Coffman's</b></h1> <h2>Chimney Sweeps</h2>
+    <div class="phone"><a href="tel:1-812-923-0480">812.923.0480</a></div>
+    <h1 class="w3-jumbo garamond "><b>Coffman's<span><div class="logo-certified"></div></span></b></h1> <h2>Chimney Sweeps</h2>
     <h3 class="w3-xxxlarge coffman-text-red"><b>Chimney Cleaning.</b></h3>
     <hr style="width:50px;border:5px solid #8B0000" class="w3-round">
   </div>
@@ -263,7 +236,7 @@ https://www.w3schools.comhttps://www.w3schools.com/w3images/kitchenconcrete.jpg
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">site by <a href="http://www.forteworks.com" title="W3.CSS" target="_blank" class="w3-hover-opacity">forteworks</a></p></div>
 
 <script>
 // Script to open and close sidebar
